@@ -73,7 +73,7 @@ export const tokens = {
       },
       text: {
         primary: '#d1d3da',
-        secondary: '#000000',
+        secondary: '#ffffff',
       }
      
     },
@@ -96,7 +96,7 @@ export const tokens = {
       },
       h4: {
         fontFamily: ["Roboto", "sans-serif"].join(","),
-        fontSize: 14,
+        fontSize: 15,
         fontWeight: 600,
         color: tokens.grey[300],
       },
