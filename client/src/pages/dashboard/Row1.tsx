@@ -67,9 +67,9 @@ const Row1 = (props: Props) => {
     <>
       <DashBoardBox gridArea="a">
         <BoxHeader
-          title="Revenue and Expenses"
-          subtitle="top line represents revenue, bottom line represents expenses"
-          sideText="+4%"
+          title="Revenue minus Expenses"
+          subtitle="profit for 12 months"
+          sideText="+23.4%"
         />
         <ResponsiveContainer width="100%" height="100%">
           <AreaChart
@@ -80,7 +80,7 @@ const Row1 = (props: Props) => {
               top: 15,
               right: 25,
               left: -10,
-              bottom: 75,
+              bottom: 85,
             }}
           >
             <defs>
@@ -131,11 +131,13 @@ const Row1 = (props: Props) => {
         </ResponsiveContainer>
       </DashBoardBox>
 
+     
+
       <DashBoardBox gridArea="b">
         <BoxHeader
           title="Profit and Revenue"
-          subtitle="top line represents revenue, bottom line represents expenses"
-          sideText="+4%"
+          subtitle="top line represents revenue, bottom line represents profit"
+          sideText=""
         />
         <ResponsiveContainer width="100%" height="100%">
           <LineChart
@@ -146,7 +148,7 @@ const Row1 = (props: Props) => {
               top: 20,
               right: 0,
               left: -10,
-              bottom: 75,
+              bottom: 85,
             }}
           >
             <CartesianGrid vertical={false} stroke={palette.grey[800]} />
@@ -200,7 +202,7 @@ const Row1 = (props: Props) => {
         <BoxHeader
           title="Revenue Month by Month"
           subtitle="graph representing the revenue month by month"
-          sideText="+4%"
+          sideText=""
         />
         <ResponsiveContainer width="100%" height="100%">
           <BarChart
