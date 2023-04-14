@@ -15,7 +15,7 @@ import {
   YAxis,
 } from "recharts";
 import regression, { DataPoint } from "regression";
-import "./predictions.css";
+
 
 const Predictions = () => {
   const { palette } = useTheme();
@@ -72,7 +72,7 @@ const Predictions = () => {
                 transition: "background-color 0.3s ease-in-out",
               }}
             >
-               Generate Predictions
+           {isPredictions ? "Remove Predictions" : "Generate Predictions"}
             </button>
           </div>
         </Box>

@@ -10,12 +10,14 @@ const Navbar = (props: Props) => {
   const { palette } = useTheme();
 
   const [selected, setSelected] = useState("hoverapplied");
-
+  
   return (
-    <FlexBetween mb="0.25rem" p="0.5rem 0rem" color={palette.grey[100]}>
+    <FlexBetween mb="0.25rem" p="0.5rem 0rem">
       {/* LEFT SIDE PANNEL */}
       <FlexBetween gap="0.75rem">
-        <DiamondIcon sx={{ fontSize: "30px" }} />
+      <Link to="/">
+        <DiamondIcon sx={{ fontSize: "30px", color: "white"  }} />
+      </Link>
         <Typography variant="h4" fontSize="16px">
           ProfitSight
         </Typography>
@@ -23,7 +25,7 @@ const Navbar = (props: Props) => {
 
       {/* RIGHT SIDE PANNEL */}
       <FlexBetween gap="2rem">
-        <Box sx={{ "&:hover": { color: palette.primary[200] } }}>
+        <Box sx={{ "&:hover": { color: palette.primary[400] } }}>
           <Link
             to="/"
             onClick={() => setSelected("hoverapplied")}
@@ -37,7 +39,7 @@ const Navbar = (props: Props) => {
           </Link>
         </Box>
 
-        <Box sx={{ "&:hover": { color: palette.primary[200] } }}>
+        <Box sx={{ "&:hover": { color: palette.primary[400] } }}>
           <Link
             to="/predictions"
             onClick={() => setSelected("hoverapplied")}
