@@ -188,7 +188,7 @@ const Row2 = () => {
 
          <DashBoardBox gridArea="f">
 
-        <BoxHeader title="Product Prices vs Expenses" sideText="Highest: 198.54€"/>
+        <BoxHeader title="Product Prices vs Expenses" sideText="Highest price: 198.54€"/>
         <ResponsiveContainer width="100%" height="100%">
           <ScatterChart
             margin={{
