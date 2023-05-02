@@ -8,3 +8,6 @@ Then you will see linear regression that shows projected revenue predictions for
 All HTTP requests are defined and performed to the server with the help of redux toolkit.
 
 Fully responsive layout with grid template system and design with Material UI library.
+
+
+![Dashboard Sample](https://github.com/ampodo/finance-app/blob/main/dashboard.png)
