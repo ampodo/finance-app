@@ -42,10 +42,10 @@ const Predictions = () => {
       };
     });
   }, [kpiData]);
-
+  
   return (
     <DashBoardBox width="100%" height="100%" p="1rem" overflow="hidden">
-      <FlexBetween m="1rem 2.5rem" gap="1rem">
+      <FlexBetween m="1rem 2.5rem">
         <Box>
           <Typography variant="h3">Revenue and Predictions</Typography>
           <Typography
@@ -110,6 +110,7 @@ const Predictions = () => {
           <Legend
             wrapperStyle={{
               margin: "-10px 0 0 0",
+              padding: "0 0 5px 0",
             }}
             verticalAlign="top"
           />

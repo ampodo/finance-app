@@ -1,0 +1,16 @@
+# fly.toml app configuration file generated for floral-wood-2947 on 2023-05-01T22:20:30+03:00
+#
+# See https://fly.io/docs/reference/configuration/ for information about how to use this file.
+#
+
+app = "floral-wood-2947"
+primary_region = "arn"
+
+[env]
+  PORT = "8080"
+
+[http_service]
+  internal_port = 8080
+  force_https = true
+  auto_stop_machines = true
+  auto_start_machines = true
