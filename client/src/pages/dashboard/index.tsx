@@ -2,6 +2,8 @@ import { Box, useMediaQuery } from "@mui/material";
 import Row1 from "./Row1";
 import Row2 from "./Row2";
 import Row3 from "./Row3";
+import "./index.css"; 
+
 
 const gridTemplateLargeScreens = `
 
@@ -61,6 +63,7 @@ const Dashboard = () => {
       height="100%"
       display="grid"
       gap="1.5rem"
+      
       sx={
         isAboveMediumScreens
           ? {
@@ -71,7 +74,7 @@ const Dashboard = () => {
             }
           : {
               gridAutoColumns: "1fr",
-              gridAutoRows: "80px",
+              gridAutoRows: "60px",
               gridTemplateAreas: gridTemplateSmallScreens,
             }
       }
